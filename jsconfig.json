@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@icons": ["src/assets/icons/index.js"],
+      "@images": ["src/assets/images/index.js"],
+      "@components": ["src/components/index.js"],
+      "@layouts": ["src/layouts/index.js"],
+      "@pages": ["src/pages/index.js"],
+      "@utils/*": ["src/utils/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

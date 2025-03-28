@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      sans: ["Poppins", "sans-serif"],
-      nunito: ["Nunito", "sans-serif"],
+      sans: ['Poppins', 'sans-serif'],
+      nunito: ['Nunito', 'sans-serif'],
     },
     extend: {
       fontWeight: {

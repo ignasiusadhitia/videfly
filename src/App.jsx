@@ -1,5 +1,5 @@
 function App() {
-  return <h1 className="font-nunito font-normal">Videfly</h1>;
+  return <h1 className="font-nunito text-5xl">Videfly</h1>;
 }
 
 export default App;
