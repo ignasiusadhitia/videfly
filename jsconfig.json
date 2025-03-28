@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@data": ["src/assets/data/data.json"],
       "@icons": ["src/assets/icons/index.js"],
       "@images": ["src/assets/images/index.js"],
       "@sections": ["src/components/sections/index.js"],

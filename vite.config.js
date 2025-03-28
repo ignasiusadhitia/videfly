@@ -10,6 +10,7 @@ export default defineConfig({
   plugins: [react(), svgr()],
   resolve: {
     alias: {
+      '@data': path.resolve('src/assets/data'),
       '@icons': path.resolve('src/assets/icons'),
       '@images': path.resolve('src/assets/images'),
       '@sections': path.resolve('src/components/sections'),
