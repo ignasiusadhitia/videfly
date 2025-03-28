@@ -1,0 +1,14 @@
+export { default as BeautyHaul } from './beauty-haul.svg?react';
+export { default as Blibli } from './blibli.svg?react';
+export { default as Calendar } from './calendar-03.svg';
+export { default as CarbonTemplate } from './carbon_template.svg';
+export { default as Chart } from './chart.svg';
+export { default as DiamondFilled } from './diamond-filled.svg';
+export { default as Link04 } from './link-04.svg';
+export { default as NextFilled } from './next-filled-svgrepo-com 1.svg';
+export { default as Shoppee } from './shopee.svg';
+export { default as Sociolla } from './sociolla.svg';
+export { default as StreamlineAi } from './streamline_ai-edit-spark.svg';
+export { default as TikTokShop } from './tiktok-shop.svg';
+export { default as Tokopedia } from './tokopedia.svg';
+export { default as VideFlyLogo } from './videfly-logo.svg';
