@@ -28,9 +28,8 @@ export default [
           map: [
             ['@icons', './src/assets/icons'],
             ['@images', './src/assets/images'],
-            ['@components', './src/components'],
-            ['@layouts', './src/layouts'],
-            ['@pages', './src/pages'],
+            ['@sections', './src/components/sections'],
+            ['@ui', './src/components/ui'],
             ['@utils', './src/utils'],
           ],
           extensions: ['.js', '.jsx', '.ts', '.tsx'],
