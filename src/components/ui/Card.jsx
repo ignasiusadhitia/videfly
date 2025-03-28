@@ -1,8 +1,8 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import Image from 'src/components/ui/Image';
-import Typography from 'src/components/ui/Typography';
+
+import { Image, Typography } from '@ui';
 
 const Card = ({ imageSource, imageAlt, headingText, bodyText }) => {
   return (

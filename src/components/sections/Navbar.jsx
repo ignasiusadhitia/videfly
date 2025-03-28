@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { SectionWrapper } from '@ui';
+
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return <SectionWrapper tag="nav">Navbar</SectionWrapper>;
 };
 
 export default Navbar;
