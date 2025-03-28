@@ -6,7 +6,7 @@ const SectionWrapper = ({ tag = 'section', children }) => {
   // Mapping Tag to HTML tag
   const Tag = tag;
 
-  return <Tag>{children}</Tag>;
+  return <Tag className="container">{children}</Tag>;
 };
 
 SectionWrapper.propTypes = {
