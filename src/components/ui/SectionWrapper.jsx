@@ -10,7 +10,7 @@ const SectionWrapper = ({ tag = 'section', children }) => {
 };
 
 SectionWrapper.propTypes = {
-  tag: PropTypes.oneOf(['div', 'header', 'section', 'footer']),
+  tag: PropTypes.oneOf(['div', 'nav', 'header', 'section', 'footer']),
   children: PropTypes.node.isRequired,
 };
 
