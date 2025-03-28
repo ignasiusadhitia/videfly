@@ -7,8 +7,8 @@ const Icon = ({
   className,
   width = 'w-9',
   height = 'h-9',
-  color = 'text-primary-black',
-  groupHoverColor = 'group-hover:text-primary-green',
+  color = '',
+  groupHoverColor = '',
   onClick,
 }) => {
   const combinedClasses = `${className} ${width} ${height} ${color} ${groupHoverColor} transition-colors duration-500 ease-in-out
