@@ -1,0 +1,180 @@
+{
+  "sections": {
+    "sectionIconKey": "DiamondFilled",
+    "navbar": {
+      "logoImgKey": "VideFlyLogo",
+      "navLinks": [
+        { "id": 1, "label": "Fitur AI" },
+        { "id": 2, "label": "Cara Kerja" },
+        { "id": 3, "label": "Harga" },
+        { "id": 4, "label": "Support" }
+      ],
+      "buttonGroup": [
+        { "id": 1, "label": "Masuk" },
+        { "id": 2, "label": "Buat Video" }
+      ]
+    },
+    "liveDemo": {
+      "main": {
+        "name": "Live Demo",
+        "heading": "Coba Fitur URL to Video",
+        "highlighted": "Tanpa Biaya!",
+        "description": "Masukkan URL, ubah jadi video dalam hitungan detik. Mudah dan gratis!",
+        "selectUrlForm": {
+          "input": {
+            "prefixIconKey": "Link04",
+            "type": "select",
+            "placeholder": "Pilih Link URL Product",
+            "options": [
+              {
+                "id": 1,
+                "imgKey": "emina",
+                "title": "Emina Bright Stuff Moisturizing Cream",
+                "url": "https://www.tokopedia.com/emina-official/emina-bright-stuff-for-acne-prone-skin-moisturizing-cream-20-ml?extParam=ivf%3Dtrue%26keyword%3Demina+bright+stuff+moisturizing+cream&src=topads"
+              },
+              {
+                "id": 2,
+                "imgKey": "headphone",
+                "title": "Headphone Bluetooth Soundcore Space One",
+
+                "url": "https://www.tokopedia.com/soundcorebyanker/headphone-bluetooth-soundcore-space-one-a3035-white-1151d?extParam=ivf%3Dfalse%26keyword%3Dheadset%26search_id%3D20250226015328D7D0456FDA42B41B1P1W%26src%3Dsearch"
+              },
+              {
+                "id": 3,
+                "imgKey": "pashmina",
+                "title": "Pashmina Voal Premium Size 180 x 70cm",
+                "url": "https://www.tokopedia.com/archive-wmdfashion/pashmina-voal-premium-size-180x70cm-wmd-fashion-beige-3c805?extParam=ivf%3Dfalse%26keyword%3Dfashion%26search_id%3D20250226015701681E94924AFA0A0B7KZQ%26src%3Dsearch"
+              }
+            ],
+            "name": "selectedUrl",
+            "suffixIconKey": "Chevron"
+          },
+          "buttonLabel": "Analisa"
+        },
+        "userForm": {
+          "inputs": [
+            {
+              "id": 1,
+              "label": "Nama",
+              "type": "text",
+              "name": "name",
+              "placeholder": "Contoh: John Doe",
+              "isRequired": true
+            },
+            {
+              "id": 2,
+              "label": "Email",
+              "type": "email",
+              "name": "email",
+              "placeholder": "nama@email.com",
+              "isRequired": true
+            },
+            {
+              "id": 3,
+              "label": "No. Handphone",
+              "type": "tel",
+              "name": "phone",
+              "placeholder": "",
+              "isRequired": true
+            }
+          ],
+          "checkbox": "Dengan mendaftar, saya menyatakan telah membaca dan menyetujui Syarat dan Ketentuan dan Kebijakan Privasi Videfly",
+          "buttonLabel": "Kirim"
+        }
+      },
+      "result": {
+        "heading": "Videomu Sudah Siap!",
+        "description": "Yuk, coba jadwalkan demo untuk bikin video tanpa batas dengan semua fitur lengkap. Butuh yang lebih fleksibel? Lihat paket harga yang sesuai dengan kebutuhanmu!",
+        "buttonGroup": [
+          { "id": 1, "label": "Lihat Pricing" },
+          { "id": 2, "label": "Jadwalkan Demo" }
+        ]
+      }
+    },
+    "features": {
+      "name": "Features",
+      "heading": "Bagaimana Videfly Membantu Bisnismu?",
+      "highlighted": "Lebih Efisien, Lebih Mudah, Hasil Maksimal!",
+      "featureItems": [
+        {
+          "id": 1,
+          "imgKey": "buatVideoDariUrl",
+          "iconKey": "Link04",
+          "title": "Buat Video dari URL",
+          "description": "Cukup masukkan tautan produk atau bisnismu, dan Videfly akan otomatis mengambil informasi serta menghasilkan video siap pakai."
+        },
+        {
+          "id": 2,
+          "imgKey": "templateSiapPakai",
+          "iconKey": "CarbonTemplate",
+          "title": "Template Siap Pakai",
+          "description": "Tak perlu mendesain dari nol! Gunakan beragam template yang bisa langsung disesuaikan dengan kebutuhan bisnismu."
+        },
+        {
+          "id": 3,
+          "imgKey": "editFleksibelDanCepat",
+          "iconKey": "StreamlineAi",
+          "title": "Edit Cepat & Fleksibel",
+          "description": "Sesuaikan konten dengan mudah menggunakan Quick Edit. Ubah gambar, musik, atau elemen lainnya tanpa keahlian editing."
+        },
+        {
+          "id": 4,
+          "imgKey": "analisisDanRekomendasi",
+          "iconKey": "Chart",
+          "title": "Analisis & Rekomendasi Cerdas",
+          "description": "Dapatkan insight performa video dengan Videfly Analytics, lengkap dengan saran improvement untuk konten yang lebih menarik dan efektif."
+        },
+        {
+          "id": 5,
+          "imgKey": "jadwalkanPostingOtomatis",
+          "iconKey": "Calendar",
+          "title": "Jadwalkan & Posting Otomatis",
+          "description": "Hemat waktu dengan integrasi media sosial! Langsung jadwalkan dan publikasikan kontenmu ke berbagai platform tanpa perlu pindah aplikasi."
+        }
+      ]
+    },
+    "tutorial": {
+      "name": "Tutorial",
+      "heading": "Buat Konten Menarik Untuk Bisnismu",
+      "highlighted": "Dalam 3 Langkah Mudah!",
+      "stepItems": [
+        {
+          "id": 1,
+          "imgKey": "step1",
+          "title": "Step 1 - Masukkan URL",
+          "description": "Cukup Tempelkan tautan produk atau bisnis Anda, dan sistem kami akan secara otomatis mengambil informasi penting untuk memulai."
+        },
+        {
+          "id": 2,
+          "imgKey": "step2",
+          "title": "Step 2 - Konfirmasi Informasi & Personalisasi",
+          "description": "Periksa detail produk yang diambil, tambahkan sentuhan unik, dan pilih gaya yang sesuai dengan brand Anda."
+        },
+        {
+          "id": 3,
+          "imgKey": "step3",
+          "title": "Step 3 - Generate & Dapatkan Hasilnya",
+          "description": "Dalam hitungan detik, dapatkan konten bisnis yang siap digunakan—efektif, menarik, dan profesional!"
+        }
+      ]
+    },
+    "valuePoint": {
+      "heading": "Lebih Produktif, Lebih Untung, Lebih Hemat!",
+      "description": "Jangan tunggu lagi! Buat video pakai Videfly sekarang, biar cepat, untung besar, dan hemat!",
+      "button": { "label": "Buat Video", "iconKey": "NextFilled" },
+      "valueItems": [
+        { "id": 1, "point": 70, "description": "Produktivitas meningkat" },
+        { "id": 2, "point": 50, "description": "Kenaikan ROI" },
+        { "id": 3, "point": 20, "description": "Lebih Hemat" }
+      ],
+      "partnertsText": "Platform yang didukung",
+      "patnertItems": [
+        { "id": 1, "iconKey": "Tokopedia" },
+        { "id": 2, "iconKey": "Shoppe" },
+        { "id": 3, "iconKey": "BeautyHaul" },
+        { "id": 4, "iconKey": "Sociolla" },
+        { "id": 5, "iconKey": "TikTokShop" }
+      ]
+    }
+  }
+}
