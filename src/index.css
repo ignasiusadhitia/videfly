@@ -156,33 +156,4 @@
   .text-gradient-purple {
     background-image: linear-gradient(109.89deg, #7f52ff 1.07%, #fb8570 100%);
   }
-
-  /* Border Gradients */
-  .border-gradient::after {
-    content: '';
-    position: absolute;
-    top: -1.5px;
-    left: -1.5px;
-    right: -1.5px;
-    bottom: -1.5px;
-    z-index: -1;
-    border-radius: inherit;
-    background: var(
-      --border-gradient,
-      linear-gradient(109.89deg, #7f52ff 1.07%, #fb8570 100%)
-    );
-  }
-
-  /* Variant Border Gradients */
-  .border-gradient-purple-mix::after {
-    background: linear-gradient(109.89deg, #7f52ff 1.07%, #fb8570 100%);
-  }
-
-  .border-gradient-purple-deep::after {
-    background: linear-gradient(109.89deg, #7f52ff 1.07%, #4c3199 100%);
-  }
-
-  .border-gradient-purple-peach::after {
-    background: linear-gradient(89.94deg, #703be7 14.01%, #ffa899 91.74%);
-  }
 }
