@@ -2,7 +2,7 @@ import React from 'react';
 
 import data from '@data';
 import * as Icons from '@icons';
-import { Button, Icon, SectionWrapper } from '@ui';
+import { Button, Icon, SectionWrapper, Typography } from '@ui';
 
 const Navbar = () => {
   const { navbar } = data.sections;
@@ -17,14 +17,21 @@ const Navbar = () => {
       <ul className="flex gap-[60px]">
         {navbar.navLinks.map((navItem) => (
           <li key={navItem.id}>
-            <a href="#">{navItem.label}</a>
+            <Typography className="py-2 px-[14px]" href="#" tag="a">
+              {navItem.label}
+            </Typography>
           </li>
         ))}
       </ul>
 
       <div className="flex gap-4">
         {navbar.buttonGroup.map((button) => (
-          <Button key={button.id} label={button.label} />
+          <Button
+            key={button.id}
+            label={button.label}
+            size={button.size}
+            variant={button.variant}
+          />
         ))}
       </div>
     </SectionWrapper>
