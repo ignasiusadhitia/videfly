@@ -18,7 +18,7 @@ const Button = ({
   const variantStyles = {
     gray: 'px-5 bg-surface border text-gray-paragraph line-height-tight',
     primary: '',
-    gradient: 'bg-gradient-to-r from-purple-primary to-[#FFA899] text-white',
+    gradient: 'bg-purple-mix text-white',
   };
 
   // Size styles
