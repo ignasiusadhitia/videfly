@@ -160,6 +160,7 @@ Typography.propTypes = {
     'p',
     'span',
     'label',
+    'a',
   ]),
   variant: PropTypes.oneOf(Object.keys(VARIANTS)),
   align: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
