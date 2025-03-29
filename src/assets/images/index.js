@@ -9,4 +9,6 @@ export { default as pashmina } from './pashmina.webp';
 export { default as step1 } from './step-1-masukkan-url.webp';
 export { default as step2 } from './step-2-konfirmasi-informasi-dan-personalisasi.webp';
 export { default as step3 } from './step-3-generate-dan-dapatkan-hasilnya.webp';
+export { default as subtractMain } from './subtract-main.webp';
+export { default as subtractResult } from './subtract-result.webp';
 export { default as templateSiapPakai } from './template-siap-pakai.webp';
