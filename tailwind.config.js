@@ -18,11 +18,28 @@ export default {
       },
     },
     extend: {
+      fontSize: {
+        xs: ['14px', { lineHeight: '100%', letterSpacing: '1%' }],
+        sm: ['14.4px', { lineHeight: '100%', letterSpacing: '0%' }],
+        base: ['16px', { lineHeight: '100%', letterSpacing: '0%' }],
+        md: ['18px', { lineHeight: '100%', letterSpacing: '0%' }],
+        lg: ['19.2px', { lineHeight: '100%', letterSpacing: '0%' }],
+        xl: ['20px', { lineHeight: '120%', letterSpacing: '-1%' }],
+        '2xl': ['40px', { lineHeight: '120%', letterSpacing: '-1%' }],
+        '3xl': ['40px', { lineHeight: '130%', letterSpacing: '0%' }],
+        '4xl': ['48px', { lineHeight: '130%' }],
+        '5xl': ['76px', { lineHeight: '130%', letterSpacing: '0%' }],
+      },
       fontWeight: {
         normal: 400,
         medium: 500,
         semibold: 600,
         bold: 700,
+      },
+      letterSpacing: {
+        tight: '-1%',
+        normal: '0%',
+        wide: '1%',
       },
       colors: {
         white: {
