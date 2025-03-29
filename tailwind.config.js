@@ -71,30 +71,91 @@ export default {
         stroke: 'hsla(0, 0%, 90%, 1)',
         surface: 'hsla(0, 0%, 96%, 1)',
         tertiary: 'hsla(0, 0%, 46%, 1)',
-        gradients: {
-          purpleLight:
-            'linear-gradient(0deg, #703BE7, #703BE7), linear-gradient(180deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0) 100%)',
-          purpleLightAlt:
-            'linear-gradient(185.48deg, #EEE2FF 17.78%, #9747FF 95.62%)',
-          purpleDeep: 'linear-gradient(109.89deg, #7F52FF 1.07%, #4C3199 100%)',
-          purpleMix: 'linear-gradient(109.89deg, #7F52FF 1.07%, #FB8570 100%)',
-          graySoft: 'linear-gradient(180deg, #EDEDED 0%, #D6D6D6 100%)',
-          softGray:
-            'linear-gradient(182.84deg, rgba(245, 245, 249, 0) 2.36%, #F5F5F9 55.82%)',
-          softGrayAlt:
-            'linear-gradient(182.84deg, rgba(245, 245, 249, 0) 2.36%, #F5F5F9 56.12%)',
-          whiteFade:
-            'linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 46.27%, #FFFFFF 100%)',
-          whiteTransparent:
-            'linear-gradient(180deg, rgba(255, 255, 255, 0.41) 0%, rgba(0, 0, 0, 0) 100%)',
-          purpleSky:
-            'linear-gradient(315.94deg, #F1EDFD -8.05%, #B9AFF7 32.61%, #7261EF 99.96%)',
-          purpleSkyAlt:
-            'linear-gradient(329.07deg, #F1EDFD 24.27%, #B9AFF7 51.81%, #7261EF 69.92%)',
-          purplePeach:
-            'linear-gradient(89.94deg, #703BE7 14.01%, #FFA899 91.74%)',
-        },
+
+        // Purple Gradients
+        'purple-light-start': '#703BE7',
+        'purple-light-end': '#703BE7',
+        'purple-light-overlay-start': 'rgba(255, 255, 255, 0.34)',
+        'purple-light-overlay-end': 'rgba(255, 255, 255, 0)',
+
+        'purple-lightalt-start': '#EEE2FF',
+        'purple-lightalt-end': '#9747FF',
+
+        'purple-deep-start': '#7F52FF',
+        'purple-deep-end': '#4C3199',
+
+        'purple-mix-start': '#7F52FF',
+        'purple-mix-end': '#FB8570',
+
+        // Gray Gradients
+        'gray-soft-start': '#EDEDED',
+        'gray-soft-end': '#D6D6D6',
+
+        'soft-gray-start': 'rgba(245, 245, 249, 0)',
+        'soft-gray-end': '#F5F5F9',
+
+        'soft-gray-alt-start': 'rgba(245, 245, 249, 0)',
+        'soft-gray-alt-end': '#F5F5F9',
+
+        // White Gradients
+        'white-fade-start': 'rgba(255, 255, 255, 0)',
+        'white-fade-mid': '#FFFFFF',
+        'white-fade-end': '#FFFFFF',
+
+        'white-transparent-start': 'rgba(255, 255, 255, 0.41)',
+        'white-transparent-end': 'rgba(0, 0, 0, 0)',
+
+        // Complex Purple Gradients
+        'purple-sky-1': '#F1EDFD',
+        'purple-sky-2': '#B9AFF7',
+        'purple-sky-3': '#7261EF',
+
+        'purple-peach-start': '#703BE7',
+        'purple-peach-end': '#FFA899',
       },
+
+      gradientColorStops: (theme) => ({
+        // Purple Gradients
+        'purple-light-start': theme('colors.purple-deep-start'),
+        'purple-light-end': theme('purple-light-end'),
+        'purple-light-overlay-start': theme('purple-light-overlay-start'),
+        'purple-light-overlay-end': theme('purple-light-overlay-end'),
+
+        'purple-lightalt-start': theme('purple-lightalt-start'),
+        'purple-lightalt-end': theme('purple-lightalt-end'),
+
+        'purple-deep-start': theme('purple-deep-start'),
+        'purple-deep-end': theme('purple-deep-end'),
+
+        'purple-mix-start': theme('purple-mix-start'),
+        'purple-mix-end': theme('purple-mix-end'),
+
+        // Complex Purple Gradients
+        'purple-sky-1': theme('purple-sky-1'),
+        'purple-sky-2': theme('purple-sky-2'),
+        'purple-sky-3': theme('purple-sky-3'),
+
+        'purple-peach-start': theme('purple-peach-start'),
+        'purple-peach-end': theme('purple-peach-end'),
+
+        // Gray Gradients
+        'gray-soft-start': theme('gray-soft-start'),
+        'gray-soft-end': theme('gray-soft-end'),
+
+        'soft-gray-start': theme('soft-gray-start'),
+        'soft-gray-end': theme('soft-gray-end'),
+
+        'soft-gray-alt-start': theme('soft-gray-alt-start'),
+        'soft-gray-alt-end': theme('soft-gray-alt-end'),
+
+        // White Gradients
+        'white-fade-start': theme('white-fade-start'),
+        'white-fade-mid': theme('white-fade-mid'),
+        'white-fade-end': theme('white-fade-end'),
+
+        'white-transparent-start': theme('white-transparent-start'),
+        'white-transparent-end': theme('white-transparent-end'),
+      }),
       borderWidth: {
         1.5: '1.5px',
         1.55: '1.55px',
