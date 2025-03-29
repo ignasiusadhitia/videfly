@@ -46,17 +46,25 @@ export default {
           button: 'hsla(0, 0%, 90%, 1)',
           label: 'hsla(0, 0%, 69%, 1)',
         },
+        stroke: 'hsla(0, 0%, 90%, 1)',
         surface: 'hsla(0, 0%, 96%, 1)',
+        tertiary: 'hsla(0, 0%, 46%, 1)',
         gradients: {
           purpleLight:
             'linear-gradient(0deg, #703BE7, #703BE7), linear-gradient(180deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0) 100%)',
+          purpleLightAlt:
+            'linear-gradient(185.48deg, #EEE2FF 17.78%, #9747FF 95.62%)',
+          purpleDeep: 'linear-gradient(109.89deg, #7F52FF 1.07%, #4C3199 100%)',
           purpleMix: 'linear-gradient(109.89deg, #7F52FF 1.07%, #FB8570 100%)',
+          graySoft: 'linear-gradient(180deg, #EDEDED 0%, #D6D6D6 100%)',
           softGray:
             'linear-gradient(182.84deg, rgba(245, 245, 249, 0) 2.36%, #F5F5F9 55.82%)',
           softGrayAlt:
             'linear-gradient(182.84deg, rgba(245, 245, 249, 0) 2.36%, #F5F5F9 56.12%)',
           whiteFade:
             'linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 46.27%, #FFFFFF 100%)',
+          whiteTransparent:
+            'linear-gradient(180deg, rgba(255, 255, 255, 0.41) 0%, rgba(0, 0, 0, 0) 100%)',
           purpleSky:
             'linear-gradient(315.94deg, #F1EDFD -8.05%, #B9AFF7 32.61%, #7261EF 99.96%)',
           purpleSkyAlt:
@@ -64,6 +72,10 @@ export default {
           purplePeach:
             'linear-gradient(89.94deg, #703BE7 14.01%, #FFA899 91.74%)',
         },
+      },
+      borderWidth: {
+        1.5: '1.5px',
+        1.55: '1.55px',
       },
     },
   },
