@@ -10,8 +10,13 @@
         { "id": 4, "label": "Support" }
       ],
       "buttonGroup": [
-        { "id": 1, "label": "Masuk" },
-        { "id": 2, "label": "Buat Video" }
+        { "id": 1, "label": "Masuk", "variant": "gray", "size": "small" },
+        {
+          "id": 2,
+          "label": "Buat Video",
+          "variant": "gradient",
+          "size": "small"
+        }
       ]
     },
     "liveDemo": {
