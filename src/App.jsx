@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
+
 import { Features, LiveDemo, Navbar, Tutorial, ValuePoint } from '@sections';
 
 function App() {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }, []);
   return (
     <>
       <header className="mb-[100px]">
