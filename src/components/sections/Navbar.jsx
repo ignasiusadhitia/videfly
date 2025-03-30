@@ -34,7 +34,11 @@ const Navbar = () => {
             variant={button.variant}
           />
         ))}
-        <Icon IconComponent={Icons[navbar.burgerIconKey]} width="w-6" />
+        <Icon
+          IconComponent={Icons[navbar.burgerIconKey]}
+          className="block lg:hidden"
+          width="w-6"
+        />
       </div>
     </SectionWrapper>
   );
