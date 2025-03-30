@@ -54,7 +54,7 @@ const Select = ({ prefixIcon, placeholder, suffixIcon, optionItems }) => {
 
   return (
     <>
-      <div className="relative max-w-[430px] h-[50px] py-2 pl-4 pr-2 flex items-center border-[1.55px] border-purple-primary rounded-2xl">
+      <div className="relative w-full max-w-[430px] h-[50px] py-2 pl-4 pr-2 flex items-center border-[1.55px] border-purple-primary rounded-2xl">
         <div className="flex gap-2 items-center flex-grow truncate">
           <div>
             <Icon IconComponent={Icons[prefixIcon]} width="w-[24.84px]" />
