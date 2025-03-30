@@ -15,12 +15,12 @@ const Input = ({ input }) => {
       <div className="flex gap-6">
         {type === 'tel' && (
           <input
-            className="pb-[10px] border-b-[1.5px] w-[50px] border-disabled-button text-center"
+            className="pb-[10px] border-b-[1.5px] w-[50px] border-disabled-button text-center focus:border-black focus:outline-none"
             value="+62"
           />
         )}
         <input
-          className="pb-[10px] border-b-[1.5px] border-disabled-button"
+          className={`${type !== 'checkbox' && 'w-full'} pb-[10px] border-b-[1.5px] border-disabled-button`}
           name={name}
           placeholder={placeholder}
           type={type}
