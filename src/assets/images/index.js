@@ -8,6 +8,7 @@ export { default as headphone } from './headphone-bluetooth.webp';
 export { default as heroImage } from './hero-image.webp';
 export { default as jadwalkanPostingOtomatis } from './jadwalkan-dan-posting-otomatis.webp';
 export { default as pashmina } from './pashmina.webp';
+export { default as result } from './result.webp';
 export { default as shoppee } from './shopee.svg';
 export { default as sociolla } from './sociolla.svg';
 export { default as step1 } from './step-1-masukkan-url.webp';
