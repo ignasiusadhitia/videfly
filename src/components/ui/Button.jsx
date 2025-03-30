@@ -12,25 +12,27 @@ const Button = ({
   disabled = false,
   isLoading = false,
   className = '',
+  isCustom = false,
+
   ...props
 }) => {
   // Variant styles
   const variantStyles = {
-    gray: 'px-5 bg-surface text-gray-paragraph line-height-tight',
-    primary: '',
+    gray: 'px-5 bg-surface text-gray-paragraph line-height-tight shadow-xs text-base font-semibold letter-spacing-normal',
+    primary: `bg-purple-primary text-white ${!isCustom && 'font-semibold'}`,
     gradient: 'bg-purple-mix text-white font-semibold',
+    outlined: `border-[1.5px] border-purple-primary text-purple-primary ${!isCustom && 'font-semibold'}`,
   };
 
   // Size styles
   const sizeStyles = {
-    small:
-      'w-[111px] h-[44px] py-[10px] shadow-xs text-base font-semibold letter-spacing-normal',
-    medium: '',
-    large: 'w-[202px] h-[47px] p-[10px] flex gap-[10px]',
+    small: 'w-[111px] h-[44px] py-[10px] rounded-xl',
+    medium: `${!isCustom && 'w-[116px]'}  h-[50px] px-[16.6px] py-[10.3px] rounded-[12.4px]`,
+    large: 'w-[202px] h-[47px] p-[10px] flex gap-[10px] rounded-xl',
   };
 
   // Base classes
-  const baseClasses = 'flex justify-center items-center rounded-xl';
+  const baseClasses = 'flex justify-center items-center ';
 
   // Combine all classes
   const classes = [
@@ -63,6 +65,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   isLoading: PropTypes.bool,
   className: PropTypes.string,
+  isCustom: PropTypes.bool,
 };
 
 export default Button;
