@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { Icon, Image, Typography } from '@ui';
+import { Counter, Icon, Image, Typography } from '@ui';
 
 const Card = ({
   imageSource,
@@ -58,7 +58,7 @@ const Card = ({
             color="text-gradient text-gradient-purple"
             variant="nunito-bold-76"
           >
-            {value}
+            <Counter target={value} />
           </Typography>
           <Typography
             align="text-left"
