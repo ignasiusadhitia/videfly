@@ -25,8 +25,6 @@ const LiveDemo = () => {
   const selectUrlForm = main.selectUrlForm.input;
   const userFormInputs = main.userForm.inputs;
 
-  console.log(main);
-
   const variants = {
     main: (
       <SectionWrapper className="min-h-[689px] bg-white rounded-3xl shadow-lg flex flex-wrap gap-[45px]">
