@@ -10,7 +10,6 @@ const ValuePoint = () => {
   const buttonIcon = Icons[valuePoint.button.iconKey];
   const partnertItems = valuePoint.partnertItems;
 
-  console.log(valuePoint.partnertItems);
   return (
     <SectionWrapper className="grid grid-cols-1 gap-[100px] pt-[37px] pb-[25px]">
       {/* Main card */}
@@ -73,7 +72,7 @@ const ValuePoint = () => {
         <div className="relative flex items-center">
           <div className="absolute w-[138.42px] h-[67px] bg-white-fade left-0 z-10 my-auto"></div>
           <div className="absolute w-[188px] h-[67px] bg-white-fade-alt right-0 z-10 my-auto"></div>
-          <div className="overflow-hidden py-6">
+          <div className="overflow-hidden pt-[18px] pb-[7px]">
             <div className="flex h-[42px] animate-[slide_35s_linear_infinite] gap-16 flex-grow">
               {[...partnertItems, ...partnertItems].map((logo, index) => (
                 <Image
