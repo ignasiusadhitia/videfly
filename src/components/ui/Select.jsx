@@ -45,18 +45,27 @@ Options.propTypes = {
 };
 
 // Custom select component
-const Select = ({ prefixIcon, placeholder, suffixIcon, optionItems }) => {
+const Select = ({
+  prefixIcon,
+  placeholder,
+  suffixIcon,
+  optionItems,
+  selectedOption,
+  onSelectOption,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('');
 
   const handleSelectOption = (url) => {
-    setSelectedOption(url);
+    onSelectOption(url);
     setIsOpen((prev) => !prev);
   };
 
   return (
     <>
-      <div className="relative w-full max-w-[430px] h-[50px] py-2 pl-4 pr-2 flex items-center border-[1.55px] border-purple-primary rounded-2xl">
+      <div
+        className="relative w-full max-w-[430px] h-[50px] py-2 pl-4 pr-2 flex items-center border-[1.55px] border-purple-primary rounded-2xl"
+        onClick={() => setIsOpen((prev) => !prev)}
+      >
         <div className="flex gap-2 items-center flex-grow truncate">
           {/* Preffix icon */}
           <div>
@@ -77,7 +86,6 @@ const Select = ({ prefixIcon, placeholder, suffixIcon, optionItems }) => {
             IconComponent={Icons[suffixIcon]}
             className="cursor-pointer"
             width="w-6"
-            onClick={() => setIsOpen((prev) => !prev)}
           />
         </div>
       </div>
@@ -91,6 +99,8 @@ Select.propTypes = {
   placeholder: PropTypes.string,
   suffixIcon: PropTypes.element,
   optionItems: PropTypes.array,
+  selectedOption: PropTypes.string,
+  onSelectOption: PropTypes.func,
 };
 
 export default Select;

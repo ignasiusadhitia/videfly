@@ -18,6 +18,8 @@ import {
 const LiveDemo = () => {
   // Dinamically display live demo content
   const [stage, setStage] = useState('main');
+  // Select option state
+  const [selectedOption, setSelectedOption] = useState('');
   // Show user form
   const [isFormShow, setIsFormShow] = useState(false);
   // Demo button loading state
@@ -99,6 +101,7 @@ const LiveDemo = () => {
       resetForm();
       setIsDemoLoading(false);
       setIsFormShow(false);
+      setSelectedOption('');
       setStage('main');
     }, 1500);
   };
@@ -171,9 +174,12 @@ const LiveDemo = () => {
                 optionItems={selectUrlForm.options}
                 placeholder={selectUrlForm.placeholder}
                 prefixIcon={selectUrlForm.prefixIconKey}
+                selectedOption={selectedOption}
                 suffixIcon={selectUrlForm.suffixIconKey}
+                onSelectOption={setSelectedOption}
               />
               <Button
+                disabled={selectedOption === ''}
                 label="Analisa"
                 size="medium"
                 variant="primary"
