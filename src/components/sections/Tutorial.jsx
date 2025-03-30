@@ -20,7 +20,7 @@ const Tutorial = () => {
           align="text-center"
           className="mt-[33.5px]"
           color="text-black"
-          tag="h1"
+          tag="h2"
           variant="nunito-bold-40"
         >
           {tutorial.heading}

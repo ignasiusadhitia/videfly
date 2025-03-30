@@ -20,7 +20,7 @@ const ValuePoint = () => {
               align="text-center"
               className="mb-4"
               color="text-black"
-              tag="h1"
+              tag="h2"
               variant="nunito-bold-40"
             >
               {valuePoint.heading}
