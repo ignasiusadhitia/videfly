@@ -144,6 +144,14 @@
       theme('colors.white-fade-mid') 46.27%, theme('colors.white-fade-end') 100%;
   }
 
+  .bg-white-fade-alt {
+    background: linear-gradient(90deg, var(--tw-gradient-stops));
+    --tw-gradient-stops:
+      theme('colors.white-fade-alt-start') 0%,
+      theme('colors.white-fade-alt-mid') 46.27%,
+      theme('colors.white-fade-alt-end') 100%;
+  }
+
   .bg-white-transparent {
     background: linear-gradient(180deg, var(--tw-gradient-stops));
     --tw-gradient-stops:
