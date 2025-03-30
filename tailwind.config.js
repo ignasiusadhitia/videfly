@@ -194,6 +194,7 @@ export default {
         'shadow-xl': '0px 6px 45px -4px hsla(258, 78%, 57%, 0.1)',
         'shadow-2xl': '0px 8px 80px 0px hsla(216, 28%, 23%, 0.08)',
         'shadow-custom': '1px 4px 30px 0px hsla(258, 63%, 52%, 0.08)',
+        'shadow-custom2': '0px 5px 35px 0px hsla(0, 0%, 0%, 0.08)',
       },
       animation: {
         slide: 'slide 35s linear infinite',
