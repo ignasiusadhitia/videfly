@@ -40,7 +40,7 @@ const ValuePoint = () => {
         </div>
 
         {/* Numbers */}
-        <div className="px-8 flex justify-between">
+        <div className="py-8 px-0 lg:py-0 lg:px-8 flex flex-col lg:flex-row justify-between">
           {valuePoint?.valueItems.map((value, index) => (
             <div key={value.id}>
               <Card
@@ -56,15 +56,15 @@ const ValuePoint = () => {
         </div>
       </div>
       {/* Supported platform */}
-      <div className="flex items-center">
+      <div className="flex flex-col lg:flex-row items-center">
         <div className="h-full flex items-center">
           <Typography className="w-[268.5px]" variant="poppins-normal-16">
             {valuePoint?.partnertsText}
           </Typography>
         </div>
-        <div className="relative flex items-center">
-          <div className="absolute w-[138.42px] h-[67px] bg-white-fade left-0 z-10 my-auto"></div>
-          <div className="absolute w-[188px] h-[67px] bg-white-fade-alt right-0 z-10 my-auto"></div>
+        <div className="relative flex items-center w-full max-w-[100vw] overflow-x-hidden">
+          <div className="absolute w-12 lg:w-[138.42px] h-[67px] bg-white-fade left-0 z-10 my-auto"></div>
+          <div className="absolute w-12 lg:w-[188px] h-[67px] bg-white-fade-alt right-0 z-10 my-auto"></div>
           <div className="overflow-hidden pt-[18px] pb-[7px]">
             <div className="flex h-[42px] animate-[slide_35s_linear_infinite] gap-16 flex-grow">
               {[...partnertItems, ...partnertItems].map((logo, index) => (

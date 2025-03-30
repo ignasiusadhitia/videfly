@@ -14,7 +14,7 @@ const Navbar = () => {
       tag="nav"
     >
       <Icon IconComponent={logo} width="w-[135.85px]" />
-      <ul className="flex gap-[60px]">
+      <ul className="hidden lg:flex gap-[60px]">
         {navbar.navLinks.map((navItem) => (
           <li key={navItem.id}>
             <Typography className="py-2 px-[14px]" href="#" tag="a">
@@ -28,11 +28,13 @@ const Navbar = () => {
         {navbar.buttonGroup.map((button) => (
           <Button
             key={button.id}
+            className={`${button.id === navbar.buttonGroup.length && 'hidden lg:block'}`}
             label={button.label}
             size={button.size}
             variant={button.variant}
           />
         ))}
+        <Icon IconComponent={Icons[navbar.burgerIconKey]} width="w-6" />
       </div>
     </SectionWrapper>
   );
