@@ -78,6 +78,22 @@ npm run build
 - Minimized asset sizes and optimized images.
 - Applied **lazy loading** where necessary.
 
+### 🔹 Accessibility & SEO
+
+- Uses **semantic HTML** for better screen reader compatibility.
+- Optimized **meta tags** for search engine visibility.
+
+## 📊 Lighthouse Report
+
+🔗 [View Lighthouse Report for Mobile](https://pagespeed.web.dev/analysis/https-videfly-vercel-app/j9ptk3mvfv?hl=id&form_factor=mobile)  
+🔗 [View Lighthouse Report for Desktop](https://pagespeed.web.dev/analysis/https-videfly-vercel-app/j9ptk3mvfv?hl=id&form_factor=desktop)
+
+## ✨ Future Improvements
+
+- Enhance animations using Framer Motion.
+- Improve accessibility and ARIA attributes.
+- Further optimize loading performance.
+
 ## 📩 Contact
 
 If you have any questions or feedback, feel free to reach out!  
