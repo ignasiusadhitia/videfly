@@ -169,7 +169,7 @@ const LiveDemo = () => {
             </form>
           ) : (
             // Select URL Demo
-            <div className="w-full mt-24 flex flex-col-reverse lg:flex-row items-center lg:items-end gap-3">
+            <div className="w-full mt-24 flex flex-col lg:flex-row items-center lg:items-end gap-3">
               <Select
                 optionItems={selectUrlForm.options}
                 placeholder={selectUrlForm.placeholder}
