@@ -25,6 +25,7 @@
         "heading": "Coba Fitur URL to Video",
         "highlighted": "Tanpa Biaya!",
         "description": "Masukkan URL, ubah jadi video dalam hitungan detik. Mudah dan gratis!",
+        "heroImageKey": "heroImage",
         "selectUrlForm": {
           "input": {
             "prefixIconKey": "Link04",
