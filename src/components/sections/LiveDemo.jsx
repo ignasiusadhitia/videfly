@@ -123,11 +123,13 @@ const LiveDemo = () => {
             ))}
           </div>
         </div>
-        <Image
-          alt={result.heading}
-          imageHeight="w-[614px] h-[404px]"
-          src={resultImage}
-        />
+        <div className="h-[404px]">
+          <Image
+            alt={result.heading}
+            objectFit="object-fill"
+            src={resultImage}
+          />
+        </div>
       </SectionWrapper>
     ),
   };
@@ -136,7 +138,7 @@ const LiveDemo = () => {
     if (stage === 'loading') {
       setTimeout(() => {
         setStage('result');
-      }, 3000);
+      }, 1500);
     }
   }, [stage]);
 
