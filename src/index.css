@@ -80,6 +80,12 @@
       theme('colors.purple-deep-end') 100%;
   }
 
+  .bg-purple-dark {
+    background: linear-gradient(180deg, var(--tw-gradient-stops));
+    --tw-gradient-stops:
+      theme('colors.purple-dark-start') 0%, theme('colors.purple-dark-end') 100%;
+  }
+
   .bg-purple-mix {
     background: linear-gradient(109.89deg, var(--tw-gradient-stops));
     --tw-gradient-stops:
