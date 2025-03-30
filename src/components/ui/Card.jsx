@@ -2,6 +2,8 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
+import { useHover } from '@hooks/useHover';
+
 import { Counter, Icon, Image, Typography } from '@ui';
 
 const Card = ({
@@ -16,6 +18,7 @@ const Card = ({
   value,
   valueLabel,
 }) => {
+  const [hoverRef, isHovered] = useHover();
   const variants = {
     // Default
     default: (
@@ -37,7 +40,15 @@ const Card = ({
     ),
     step: (
       <div
+        ref={hoverRef}
         className={`grid grid-cols-1 p-4 gap-3 rounded-xl border border-stroke bg-white cursor-pointer group transition-all duration-500 ease-in-out hover:shadow-shadow-custom ${isSelected && 'shadow-shadow-custom'}`}
+        style={{
+          border: (isSelected || isHovered) && '1px solid transparent',
+          background:
+            (isSelected || isHovered) &&
+            'linear-gradient(white, white) padding-box, ' +
+              'linear-gradient(185.48deg, #EEE2FF 17.78%, #9747FF 95.62%) border-box',
+        }}
         onClick={onClick}
       >
         <Typography

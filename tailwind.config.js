@@ -21,6 +21,14 @@ export default {
       backgroundImage: {
         'subtract-main': "url('/src/assets/images/subtract-main.webp')",
         'subtract-result': "url('/src/assets/images/subtract-result.webp')",
+        'gradient-border': `linear-gradient(white, white),
+          linear-gradient(109.89deg, #7F52FF 1.07%, #4C3199 100%)`,
+      },
+      backgroundOrigin: {
+        'border-box': 'border-box',
+      },
+      backgroundClip: {
+        'padding-box': 'padding-box',
       },
       fontSize: {
         xs: '14px',
