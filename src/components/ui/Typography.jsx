@@ -98,6 +98,13 @@ const VARIANTS = {
     lineHeight: 'leading-tight', // 100%
     letterSpacing: 'tracking-normal', // 0%
   },
+  'poppins-normal-18': {
+    family: 'sans',
+    weight: 'font-semibold',
+    size: 'text-lg', // 18px
+    lineHeight: 'leading-tight', // 100%
+    letterSpacing: 'tracking-normal', // 0%
+  },
   'poppins-semibold-18': {
     family: 'sans',
     weight: 'font-semibold',
