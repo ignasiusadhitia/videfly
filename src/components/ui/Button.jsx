@@ -18,7 +18,7 @@ const Button = ({
   const variantStyles = {
     gray: 'px-5 bg-surface text-gray-paragraph line-height-tight',
     primary: '',
-    gradient: 'bg-purple-mix text-white',
+    gradient: 'bg-purple-mix text-white font-semibold',
   };
 
   // Size styles
@@ -26,11 +26,11 @@ const Button = ({
     small:
       'w-[111px] h-[44px] py-[10px] shadow-xs text-base font-semibold letter-spacing-normal',
     medium: '',
-    large: '',
+    large: 'w-[202px] h-[47px] p-[10px] flex gap-[10px]',
   };
 
   // Base classes
-  const baseClasses = 'rounded-xl';
+  const baseClasses = 'flex justify-center items-center rounded-xl';
 
   // Combine all classes
   const classes = [
