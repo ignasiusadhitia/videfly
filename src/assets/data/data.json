@@ -174,12 +174,13 @@
         { "id": 3, "point": 20, "description": "Lebih Hemat" }
       ],
       "partnertsText": "Platform yang didukung",
-      "patnertItems": [
-        { "id": 1, "iconKey": "Tokopedia" },
-        { "id": 2, "iconKey": "Shoppe" },
-        { "id": 3, "iconKey": "BeautyHaul" },
-        { "id": 4, "iconKey": "Sociolla" },
-        { "id": 5, "iconKey": "TikTokShop" }
+      "partnertItems": [
+        { "id": 1, "imageKey": "tokopedia" },
+        { "id": 2, "imageKey": "shoppee" },
+        { "id": 3, "imageKey": "beautyHaul" },
+        { "id": 4, "imageKey": "sociolla" },
+        { "id": 5, "imageKey": "tikTokShop" },
+        { "id": 6, "imageKey": "blibli" }
       ]
     }
   }
