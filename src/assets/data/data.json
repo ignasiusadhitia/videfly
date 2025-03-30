@@ -87,7 +87,8 @@
             {
               "id": 4,
               "label": "Dengan mendaftar, saya menyatakan telah membaca dan menyetujui Syarat dan Ketentuan dan Kebijakan Privasi Videfly",
-              "type": "checkbox"
+              "type": "checkbox",
+              "name": "agree"
             }
           ],
           "buttonLabel": "Kirim"

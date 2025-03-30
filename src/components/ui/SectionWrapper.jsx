@@ -6,6 +6,7 @@ const SectionWrapper = ({ tag = 'section', className, children }) => {
   // Mapping Tag to HTML tag
   const Tag = tag;
 
+  // Wrap each section
   return <Tag className={`${className} container`}>{children}</Tag>;
 };
 

@@ -13,7 +13,10 @@ const Navbar = () => {
       className="flex justify-between items-center py-4"
       tag="nav"
     >
+      {/* Logo */}
       <Icon IconComponent={logo} width="w-[135.85px]" />
+
+      {/* Nav links */}
       <ul className="hidden lg:flex gap-[60px]">
         {navbar.navLinks.map((navItem) => (
           <li key={navItem.id}>
@@ -24,6 +27,7 @@ const Navbar = () => {
         ))}
       </ul>
 
+      {/* Button group */}
       <div className="flex gap-4">
         {navbar.buttonGroup.map((button) => (
           <Button
@@ -34,6 +38,8 @@ const Navbar = () => {
             variant={button.variant}
           />
         ))}
+
+        {/* Burger button */}
         <Icon
           IconComponent={Icons[navbar.burgerIconKey]}
           className="block lg:hidden"

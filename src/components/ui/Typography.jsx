@@ -141,6 +141,7 @@ const Typography = ({
   const Tag = tag;
   const variantConfig = VARIANTS[variant] || VARIANTS['poppins-regular-16'];
 
+  // Base classes
   const baseClasses = [
     variantConfig.family === 'sans' ? 'font-sans' : 'font-nunito',
     variantConfig.weight,

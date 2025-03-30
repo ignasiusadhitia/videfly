@@ -38,6 +38,8 @@ const Card = ({
         </div>
       </div>
     ),
+
+    // Step card (tutorial section)
     step: (
       <div
         ref={hoverRef}
@@ -61,6 +63,8 @@ const Card = ({
         <Typography variant="poppins-regular-14-relaxed">{bodyText}</Typography>
       </div>
     ),
+
+    // Value card (value point section)
     value: (
       <div className="grid gap-6 my-[11px] min-w-[309px]">
         <div className="grid grid-cols-2 gap-5 pb-[26px]">

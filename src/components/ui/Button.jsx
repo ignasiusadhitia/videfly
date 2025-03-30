@@ -2,7 +2,8 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { Icon, Spinner } from '@ui';
+import { Loading } from '@icons';
+import { Icon } from '@ui';
 
 const Button = ({
   label,
@@ -46,7 +47,9 @@ const Button = ({
   return (
     <button className={classes} disabled={disabled} {...props}>
       {isLoading ? (
-        <Spinner />
+        <div className="w-[174px]">
+          <Loading className="animate-spin text-white w-[21px] mx-auto" />
+        </div>
       ) : (
         <>
           {label}

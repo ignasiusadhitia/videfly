@@ -9,6 +9,7 @@ const Features = () => {
   const { features } = data.sections;
   return (
     <SectionWrapper className="grid grid-cols-1 gap-20 pt-[31px] pb-[60px]">
+      {/* Heading */}
       <div className="flex flex-col items-center">
         <Badge label={features.name} />
         <Typography
@@ -30,6 +31,8 @@ const Features = () => {
           </Typography>
         </Typography>
       </div>
+
+      {/* Feature cards */}
       <div className="grid grid-cols-1 gap-3">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {features?.featureItems.slice(0, 3).map((feature) => (

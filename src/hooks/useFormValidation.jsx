@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const useFormValidation = (initialState, validate) => {
-  const [values, setvalues] = useState(initialState);
+export function useFormValidation(initialState, validate) {
+  const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setvalues({
+    setValues({
       ...values,
       [name]: type === 'checkbox' ? checked : value,
     });
@@ -23,7 +23,20 @@ const useFormValidation = (initialState, validate) => {
       callback(values);
     }
   };
-  return { values, errors, isSubmitting, handleChange, handleSubmit };
-};
 
-export default useFormValidation;
+  const resetForm = () => {
+    setValues(initialState);
+    setErrors({});
+    setIsSubmitting(false);
+  };
+
+  return {
+    values,
+    errors,
+    isSubmitting,
+    handleChange,
+    handleSubmit,
+    resetForm,
+    setErrors,
+  };
+}

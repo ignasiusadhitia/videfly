@@ -11,6 +11,7 @@ const Icon = ({
   groupHoverColor = '',
   onClick,
 }) => {
+  // Combine classes
   const combinedClasses = `${className} ${width} ${height} ${color} ${groupHoverColor} transition-colors duration-500 ease-in-out
 `;
 

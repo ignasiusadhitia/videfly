@@ -14,6 +14,7 @@ const Tutorial = () => {
 
   return (
     <SectionWrapper className="grid grid-cols-1 gap-20 pt-[31px] pb-[42px]">
+      {/* Heading */}
       <div className="flex flex-col items-center">
         <Badge label={tutorial.name} />
         <Typography
@@ -38,6 +39,7 @@ const Tutorial = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[55px]">
+        {/* Selected image card */}
         <div className="p-[60px] rounded-3xl border border-disabled-button bg-offWhite">
           <Image
             alt={`tutorial-step-${currentStep.id}`}
@@ -45,6 +47,7 @@ const Tutorial = () => {
             src={Images[currentStep.imgKey]}
           />
         </div>
+        {/* Step cards */}
         <div className="grid grid-cols-1 gap-[35px] py-[26px]">
           {tutorial?.stepItems.map((step) => (
             <Card

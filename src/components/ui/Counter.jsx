@@ -7,6 +7,7 @@ const Counter = ({ target }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
+  // Start counting when the counter display on user screen
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
