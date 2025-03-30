@@ -72,7 +72,10 @@ export default {
           button: 'hsla(0, 0%, 90%, 1)',
           label: 'hsla(0, 0%, 69%, 1)',
         },
-        stroke: 'hsla(0, 0%, 90%, 1)',
+        stroke: {
+          DEFAULT: 'hsla(0, 0%, 90%, 1)',
+          half: 'hsla(0, 0%, 90%, 0.5)',
+        },
         surface: 'hsla(0, 0%, 96%, 1)',
         tertiary: 'hsla(0, 0%, 46%, 1)',
 
@@ -108,6 +111,10 @@ export default {
         'white-fade-start': 'rgba(255, 255, 255, 0)',
         'white-fade-mid': '#FFFFFF',
         'white-fade-end': '#FFFFFF',
+
+        'white-fade-alt-start': 'rgba(255, 255, 255, 0)',
+        'white-fade-alt-mid': 'rgba(255, 255, 255, 0.638972)',
+        'white-fade-alt-end': '#FFFFFF',
 
         'white-transparent-start': 'rgba(255, 255, 255, 0.41)',
         'white-transparent-end': 'rgba(0, 0, 0, 0)',
@@ -179,6 +186,15 @@ export default {
         'shadow-xl': '0px 6px 45px -4px hsla(258, 78%, 57%, 0.1)',
         'shadow-2xl': '0px 8px 80px 0px hsla(216, 28%, 23%, 0.08)',
         'shadow-custom': '1px 4px 30px 0px hsla(258, 63%, 52%, 0.08)',
+      },
+      animation: {
+        slide: 'slide 35s linear infinite',
+      },
+      keyframes: {
+        slide: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
+        },
       },
     },
   },
