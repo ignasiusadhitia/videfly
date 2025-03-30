@@ -37,7 +37,7 @@ const Tutorial = () => {
         </Typography>
       </div>
 
-      <div className="grid grid-cols-2 gap-[55px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[55px]">
         <div className="p-[60px] rounded-3xl border border-disabled-button bg-offWhite">
           <Image
             alt={`tutorial-step-${currentStep.id}`}

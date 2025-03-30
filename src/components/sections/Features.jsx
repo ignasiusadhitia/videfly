@@ -31,7 +31,7 @@ const Features = () => {
         </Typography>
       </div>
       <div className="grid grid-cols-1 gap-3">
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {features?.featureItems.slice(0, 3).map((feature) => (
             <Card
               key={feature.id}
@@ -44,7 +44,7 @@ const Features = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {features?.featureItems.slice(3, 5).map((feature) => (
             <Card
               key={feature.id}

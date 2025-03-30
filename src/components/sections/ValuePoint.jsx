@@ -62,13 +62,6 @@ const ValuePoint = () => {
             {valuePoint?.partnertsText}
           </Typography>
         </div>
-        {/* <div className="w-full h-[67px] relative flex gap-16 flex-grow">
-          
-
-          {valuePoint?.partnertItems.map((partner) => (
-            <Image key={partner.id} src={Images[partner.imageKey]} />
-          ))}
-        </div> */}
         <div className="relative flex items-center">
           <div className="absolute w-[138.42px] h-[67px] bg-white-fade left-0 z-10 my-auto"></div>
           <div className="absolute w-[188px] h-[67px] bg-white-fade-alt right-0 z-10 my-auto"></div>
