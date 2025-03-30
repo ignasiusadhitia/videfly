@@ -18,6 +18,10 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        'subtract-main': "url('/src/assets/images/subtract-main.webp')",
+        'subtract-result': "url('/src/assets/images/subtract-result.webp')",
+      },
       fontSize: {
         xs: '14px',
         sm: '14.4px',
@@ -81,6 +85,9 @@ export default {
         'purple-lightalt-start': '#EEE2FF',
         'purple-lightalt-end': '#9747FF',
 
+        'purple-dark-start': 'hsla(256, 100%, 66%, 1)',
+        'purple-dark-end': 'hsla(256, 51%, 40%, 1)',
+
         'purple-deep-start': '#7F52FF',
         'purple-deep-end': '#4C3199',
 
@@ -123,6 +130,9 @@ export default {
 
         'purple-lightalt-start': theme('purple-lightalt-start'),
         'purple-lightalt-end': theme('purple-lightalt-end'),
+
+        'purple-dark-start': theme('purple-dark-start'),
+        'purple-dark-end': theme('purple-dark-end'),
 
         'purple-deep-start': theme('purple-deep-start'),
         'purple-deep-end': theme('purple-deep-end'),
