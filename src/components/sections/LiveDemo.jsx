@@ -25,6 +25,11 @@ const LiveDemo = () => {
   const selectUrlForm = main.selectUrlForm.input;
   const userFormInputs = main.userForm.inputs;
 
+  const handleDemoClick = () => {
+    setIsFormShow(false);
+    setStage('main');
+  };
+
   const variants = {
     main: (
       <SectionWrapper className="min-h-[689px] bg-white rounded-3xl shadow-lg flex flex-wrap gap-[45px]">
@@ -119,6 +124,7 @@ const LiveDemo = () => {
                 isCustom={button.isCustom}
                 label={button.label}
                 variant={button.variant}
+                onClick={button.id === 2 ? () => handleDemoClick() : ''}
               />
             ))}
           </div>
