@@ -74,6 +74,13 @@ const VARIANTS = {
     lineHeight: 'leading-normal', // 100%
     letterSpacing: 'tracking-normal', // 0%
   },
+  'poppins-regular-12': {
+    family: 'sans',
+    weight: 'font-normal',
+    size: 'text-[12px]', // 12px
+    lineHeight: 'leading-tight', // 100%
+    letterSpacing: 'tracking-wide', // 1%
+  },
 
   // Poppins Medium Variants
   'poppins-medium-14': {
