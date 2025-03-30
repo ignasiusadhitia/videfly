@@ -1,3 +1,4 @@
+export { default as Burger } from './burger.svg?react';
 export { default as Calendar } from './calendar-03.svg?react';
 export { default as CarbonTemplate } from './carbon_template.svg?react';
 export { default as Chart } from './chart.svg?react';
