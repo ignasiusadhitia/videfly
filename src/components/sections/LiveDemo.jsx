@@ -96,7 +96,7 @@ const LiveDemo = () => {
       </SectionWrapper>
     ),
     result: (
-      <SectionWrapper className="min-h-[689px] bg-white bg-subtract-result bg-no-repeat bg-bottom rounded-3xl shadow-lg flex flex-col items-center gap-10 pt-8 px-10">
+      <SectionWrapper className="min-h-[689px] bg-white bg-subtract-result bg-no-repeat bg-bottom rounded-3xl shadow-lg flex flex-col items-center gap-10 pt-8 pb-[21px] px-10">
         <div className="max-w-[698px] flex flex-col items-center">
           <Typography
             align="text-center"
