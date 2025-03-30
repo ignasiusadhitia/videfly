@@ -83,18 +83,35 @@
               "name": "phone",
               "placeholder": "",
               "isRequired": true
+            },
+            {
+              "id": 4,
+              "label": "Dengan mendaftar, saya menyatakan telah membaca dan menyetujui Syarat dan Ketentuan dan Kebijakan Privasi Videfly",
+              "type": "checkbox"
             }
           ],
-          "checkbox": "Dengan mendaftar, saya menyatakan telah membaca dan menyetujui Syarat dan Ketentuan dan Kebijakan Privasi Videfly",
           "buttonLabel": "Kirim"
         }
       },
       "result": {
         "heading": "Videomu Sudah Siap!",
         "description": "Yuk, coba jadwalkan demo untuk bikin video tanpa batas dengan semua fitur lengkap. Butuh yang lebih fleksibel? Lihat paket harga yang sesuai dengan kebutuhanmu!",
+        "resultImageKey": "result",
         "buttonGroup": [
-          { "id": 1, "label": "Lihat Pricing" },
-          { "id": 2, "label": "Jadwalkan Demo" }
+          {
+            "id": 1,
+            "label": "Lihat Pricing",
+            "variant": "outlined",
+            "size": "medium",
+            "isCustom": true
+          },
+          {
+            "id": 2,
+            "label": "Jadwalkan Demo",
+            "variant": "primary",
+            "size": "medium",
+            "isCustom": true
+          }
         ]
       }
     },
