@@ -8,7 +8,7 @@ import { Icon, Image, Typography } from '@ui';
 
 // Custom option component
 const Options = ({ items, onSelect }) => (
-  <div className="absolute w-[310px] lg:w-[430px] max-w-[430px] lg:mt-16 rounded-lg py-2 shadow-shadow-custom2 bg-white z-30">
+  <div className="absolute w-[310px] lg:w-[430px] max-w-[430px] -bottom-40 lg:-bottom-28 rounded-lg py-2 shadow-shadow-custom2 bg-white z-30">
     {items.map((item) => (
       <div
         key={item.id}
