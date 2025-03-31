@@ -67,6 +67,7 @@ export default {
         purple: {
           primary: 'hsla(258, 78%, 57%, 1)',
           secondary: 'hsla(259, 78%, 65%, 1)',
+          hover: 'hsla(258, 63%, 52%, 1)',
         },
         black: 'hsla(0, 0%, 0%, 1)',
         gray: {

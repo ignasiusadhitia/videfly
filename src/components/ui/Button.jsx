@@ -20,8 +20,9 @@ const Button = ({
   // Variant styles
   const variantStyles = {
     gray: 'px-5 bg-surface text-gray-paragraph line-height-tight shadow-xs text-base font-semibold letter-spacing-normal',
-    primary: `bg-purple-primary text-white ${!isCustom && 'font-semibold'}`,
-    gradient: 'bg-purple-mix text-white font-semibold',
+    primary: `bg-purple-primary text-white ${!isCustom && 'font-semibold'} hover:bg-purple-hover shadow-shadow-sm
+`,
+    gradient: 'bg-purple-mix text-white font-semibold hover:font-medium',
     outlined: `border-[1.5px] border-purple-primary text-purple-primary ${!isCustom && 'font-semibold'}`,
   };
 
@@ -33,7 +34,8 @@ const Button = ({
   };
 
   // Base classes
-  const baseClasses = 'flex justify-center items-center ';
+  const baseClasses =
+    'flex justify-center items-center transition-all duration-500 ease-in-out';
 
   // Combine all classes
   const classes = [
