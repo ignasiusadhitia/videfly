@@ -73,7 +73,7 @@ const Select = ({
           </div>
 
           {/* Custom input field */}
-          <div className="w-full truncate">
+          <div className="w-full truncate cursor-pointer">
             <Typography tag="span" variant="poppins-regular-14.4">
               {selectedOption ? selectedOption : placeholder}
             </Typography>
@@ -81,13 +81,18 @@ const Select = ({
         </div>
 
         {/* Suffix icon */}
-        <div>
+        <span
+          className={`ml-2 transition-transform duration-500 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)] ${
+            isOpen ? '-rotate-180' : 'rotate-0'
+          }`}
+          style={{ transformOrigin: 'center' }}
+        >
           <Icon
             IconComponent={Icons[suffixIcon]}
             className="cursor-pointer"
             width="w-6"
           />
-        </div>
+        </span>
       </div>
       {isOpen && <Options items={optionItems} onSelect={handleSelectOption} />}
     </>
